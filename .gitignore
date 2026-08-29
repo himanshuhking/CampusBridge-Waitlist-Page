@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+data/
+exports/
+.freebuff/
+*.log
+.DS_Store
