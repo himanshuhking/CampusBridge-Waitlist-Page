@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import { Lexend } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import './globals.css';
 
-const lexend = Lexend({ subsets: ['latin'], variable: '--font-lexend' });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
 export const metadata: Metadata = {
   title: 'CampusBridge — Talk to real students before you decide',
@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={lexend.variable}>
-      <body className={lexend.className}>{children}</body>
+    <html lang="en" className={manrope.variable}>
+      <body className={manrope.className}>{children}</body>
     </html>
   );
 }

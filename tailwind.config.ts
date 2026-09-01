@@ -31,8 +31,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-lexend)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-lexend)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-manrope)', 'system-ui', 'sans-serif'],
       },
     },
   },
