@@ -91,19 +91,19 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
 
   if (variant === 'hero-inline') {
     return (
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center px-2">
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter Email:"
           required
-          className="flex-1 px-5 py-3.5 rounded-full border-2 border-white/40 bg-white text-sm text-gray-900 placeholder-gray-500 font-bold"
+          className="flex-1 px-4 sm:px-5 py-3 sm:py-3.5 rounded-full border-2 border-white/40 bg-white text-sm text-gray-900 placeholder-gray-500 font-bold"
         />
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3 sm:py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'submitting' ? 'Joining...' : 'Join the Waitlist'}
           {status !== 'submitting' && (

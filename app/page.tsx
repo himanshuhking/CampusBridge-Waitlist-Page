@@ -88,14 +88,14 @@ export default function LandingPage() {
     <div className="min-h-screen bg-warm-50">
       {/* Navigation — transparent over hero */}
       <nav className="fixed top-0 left-0 right-0 z-50">
-        <div className="w-full flex items-center justify-between py-4 px-8 sm:px-10">
+        <div className="w-full flex items-center justify-between py-4 px-4 sm:px-8">
           <span className="text-xl font-bold">
             <span className="text-white">Campus</span>
             <span className="text-brand-500">Bridge</span>
           </span>
           <button
             onClick={scrollToSignup}
-            className="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-bold rounded-full shadow-sm inline-flex items-center gap-2"
+            className="px-4 py-2 sm:px-5 sm:py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-xs sm:text-sm font-bold rounded-full shadow-sm inline-flex items-center gap-2"
           >
             Join the Waitlist
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ export default function LandingPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6">
-          <h1 className="text-[50px] sm:text-[56px] md:text-[68px] font-bold text-white leading-tight mb-6 font-display">
+          <h1 className="text-[36px] sm:text-[44px] md:text-[56px] lg:text-[68px] font-bold text-white leading-tight mb-6 font-display">
             Stop best guessing<br />your <span className="text-brand-500">college decisions.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto">
