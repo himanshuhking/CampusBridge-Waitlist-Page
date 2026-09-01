@@ -119,7 +119,7 @@ export default function LandingPage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6">
+        <div className="relative z-10 max-w-3xl xl:max-w-5xl mx-auto text-center px-4 sm:px-6">
           <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[68px] font-bold text-white leading-[1.1] mb-6 font-display">
             Stop best guessing your <span className="text-brand-500">college decisions.</span>
           </h1>
