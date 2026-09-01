@@ -76,12 +76,12 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="flex-1 px-4 py-3 rounded-full border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400"
+          className="flex-1 px-4 py-3 rounded-full border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400 font-bold"
         />
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'submitting' ? 'Joining...' : 'Get early access'}
         </button>
@@ -98,12 +98,12 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter Email:"
           required
-          className="flex-1 px-5 py-3.5 rounded-full border-2 border-white/40 bg-white text-sm text-gray-900 placeholder-gray-500 font-medium"
+          className="flex-1 px-5 py-3.5 rounded-full border-2 border-white/40 bg-white text-sm text-gray-900 placeholder-gray-500 font-bold"
         />
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'submitting' ? 'Joining...' : 'Join the Waitlist'}
           {status !== 'submitting' && (
@@ -125,7 +125,7 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="w-full px-4 py-3 rounded-xl border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400"
+          className="w-full px-4 py-3 rounded-xl border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400 font-bold"
         />
       </div>
       <div>
@@ -148,7 +148,7 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-xl shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-bold text-sm rounded-xl shadow-sm disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'submitting' ? 'Joining...' : 'Get early access'}
       </button>

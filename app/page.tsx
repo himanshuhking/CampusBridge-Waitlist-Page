@@ -95,7 +95,7 @@ export default function LandingPage() {
           </span>
           <button
             onClick={scrollToSignup}
-            className="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-full shadow-sm inline-flex items-center gap-2"
+            className="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-bold rounded-full shadow-sm inline-flex items-center gap-2"
           >
             Join the Waitlist
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,7 +121,7 @@ export default function LandingPage() {
         {/* Content */}
         <div className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6">
           <h1 className="text-[50px] sm:text-[56px] md:text-[68px] font-bold text-white leading-tight mb-6 font-display">
-            Stop best guessing<br />your college decisions.
+            Stop best guessing<br />your <span className="text-brand-500">college decisions.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto">
             Talk to real students and alumni, free video calls, get honest answers.
