@@ -103,7 +103,7 @@ export default function LandingPage() {
       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 font-display">
-            Stop guessing about your college decision from YouTube videos and brochures.
+            Stop guessing your college decisions.
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
             Talk to real students and alumni, free video calls, get honest answers.
