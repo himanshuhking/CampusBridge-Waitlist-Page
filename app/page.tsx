@@ -124,7 +124,7 @@ export default function LandingPage() {
             Stop best guessing<br />your <span className="text-brand-500">college decisions.</span>
           </h1>
           <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto">
-            Talk to real students and alumni, free video calls, get honest answers.
+            Talk to real students and alumni, free video calls,<br />get honest answers.
           </p>
           <EmailForm variant="hero-inline" />
         </div>
