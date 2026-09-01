@@ -76,12 +76,12 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
           required
-          className="flex-1 px-4 py-3 rounded-xl border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400"
+          className="flex-1 px-4 py-3 rounded-full border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400"
         />
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-xl shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
           {status === 'submitting' ? 'Joining...' : 'Get early access'}
         </button>
@@ -91,21 +91,21 @@ export default function EmailForm({ variant = 'default' }: EmailFormProps) {
 
   if (variant === 'hero-inline') {
     return (
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto justify-center">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto justify-center">
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email"
+          placeholder="Enter Email:"
           required
-          className="flex-1 px-5 py-3 rounded-xl border border-brand-300 bg-white text-sm text-gray-900 placeholder-gray-400"
+          className="flex-1 px-5 py-3.5 rounded-full border-2 border-white/40 bg-white text-sm text-gray-900 placeholder-gray-500 font-medium"
         />
         <button
           type="submit"
           disabled={status === 'submitting'}
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-xl shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
+          className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm rounded-full shadow-sm disabled:opacity-60 disabled:cursor-not-allowed whitespace-nowrap"
         >
-          {status === 'submitting' ? 'Joining...' : 'Get early access'}
+          {status === 'submitting' ? 'Joining...' : 'Join the Waitlist'}
           {status !== 'submitting' && (
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />

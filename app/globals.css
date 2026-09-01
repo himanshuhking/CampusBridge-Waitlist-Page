@@ -2,12 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 :root {
-  --brand-primary: #95BDFF;
-  --brand-primary-hover: #6b9dff;
-  --brand-light: #f0f6ff;
+  --brand-primary: #e4933e;
+  --brand-primary-hover: #dd7a1f;
+  --brand-light: #fdf6ee;
   --warm-bg: #fdfcfb;
   --warm-border: #f2ece3;
   --text-primary: #2d2a26;
@@ -23,7 +21,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
   color: var(--text-primary);
   background: var(--warm-bg);
   -webkit-font-smoothing: antialiased;
@@ -52,7 +50,7 @@ body {
 input:focus,
 select:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(221, 122, 31, 0.2);
+  box-shadow: 0 0 0 3px rgba(228, 147, 62, 0.2);
   border-color: var(--brand-primary);
 }
 
@@ -74,6 +72,6 @@ button {
 
 /* Selection color */
 ::selection {
-  background: rgba(221, 122, 31, 0.15);
+  background: rgba(228, 147, 62, 0.15);
   color: var(--text-primary);
 }

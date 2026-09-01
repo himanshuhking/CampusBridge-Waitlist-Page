@@ -86,26 +86,44 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-warm-50">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-warm-50/90 backdrop-blur-sm border-b border-warm-200 z-50">
-        <div className="w-full flex items-center justify-between py-3 px-8 sm:px-10">
-          <span className="font-semibold text-gray-900 text-lg">CampusBridge</span>
+      {/* Navigation — transparent over hero */}
+      <nav className="fixed top-0 left-0 right-0 z-50">
+        <div className="w-full flex items-center justify-between py-4 px-8 sm:px-10">
+          <span className="text-xl font-bold">
+            <span className="text-white">Campus</span>
+            <span className="text-brand-500">Bridge</span>
+          </span>
           <button
             onClick={scrollToSignup}
-            className="px-4 py-2 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-lg shadow-sm"
+            className="px-5 py-2.5 bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold rounded-full shadow-sm inline-flex items-center gap-2"
           >
-            Get early access
+            Join the Waitlist
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
           </button>
         </div>
       </nav>
 
       {/* ========== 1. HERO SECTION ========== */}
-      <section className="min-h-screen flex items-center justify-center px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-[50px] sm:text-[56px] md:text-[68px] font-bold text-gray-900 leading-tight mb-4 font-display">
-            Stop guessing your college decisions.
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/hero-bg.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          {/* Dark overlay */}
+          <div className="absolute inset-0 bg-black/50" />
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-3xl mx-auto text-center px-4 sm:px-6">
+          <h1 className="text-[50px] sm:text-[56px] md:text-[68px] font-bold text-white leading-tight mb-6 font-display">
+            Stop best guessing<br />your college decisions.
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto">
             Talk to real students and alumni, free video calls, get honest answers.
           </p>
           <EmailForm variant="hero-inline" />
@@ -291,7 +309,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ========== 5. SOCIAL PROOF / FOUNDER'S NOTE ========== */}
+      {/* ========== 5. SOCIAL PROOF / FOUNDER&apos;S NOTE ========== */}
       <section className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="bg-warm-100 rounded-2xl p-8 sm:p-10 border border-warm-200">
@@ -333,12 +351,10 @@ export default function LandingPage() {
       <footer className="py-8 px-4 sm:px-6 border-t border-warm-200">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 bg-brand-500 rounded-md flex items-center justify-center">
-              <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-              </svg>
-            </div>
-            <span className="font-medium text-gray-800 text-sm">CampusBridge</span>
+            <span className="font-medium text-gray-800 text-sm">
+              <span className="text-gray-900">Campus</span>
+              <span className="text-brand-500">Bridge</span>
+            </span>
           </div>
           <p className="text-xs text-gray-400">
             Honest college advice, from people who&apos;ve lived it.
