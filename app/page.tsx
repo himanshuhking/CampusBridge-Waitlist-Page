@@ -115,7 +115,7 @@ export default function LandingPage() {
             className="w-full h-full object-cover"
           />
           {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
 
         {/* Content */}
