@@ -73,10 +73,10 @@ export default function MentorCard({
         </div>
 
         {/* College */}
-        <p className="text-[15px] font-bold text-gray-900 mb-2.5">{college}</p>
+        <p className="text-[15px] font-bold text-gray-900 mb-2.5 ml-6">{college}</p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-3">
+        <div className="flex flex-wrap gap-2 mb-3 ml-6">
           {tags.map((tag) => (
             <span
               key={tag.label}

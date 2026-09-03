@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MentorCard from '@/components/MentorCard';
 import EmailForm from '@/components/EmailForm';
 import { usePageViewTracking, trackCTAClick } from '@/components/AnalyticsProvider';
@@ -84,11 +84,18 @@ function scrollToSignup() {
 
 export default function LandingPage() {
   usePageViewTracking();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <div className="min-h-screen bg-warm-50">
       {/* Navigation — transparent over hero */}
-      <nav className="fixed top-0 left-0 right-0 z-50">
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-black/70 backdrop-blur-md' : ''}`}>
         <div className="w-full flex items-center justify-between py-4 px-4 sm:px-8">
           <span className="text-xl font-bold">
             <span className="text-white">Campus</span>
