@@ -34,13 +34,13 @@ export default function MentorCard({
   sessions,
   reviews,
   quote,
-  width = 'w-full max-w-[340px]',
+  width = 'w-full max-w-[400px]',
   blurName = false,
 }: MentorCardProps) {
   return (
     <div className={`${width} bg-white rounded-2xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.08)]`}>
       {/* Photo */}
-      <div className="w-full h-[240px] overflow-hidden rounded-t-2xl">
+      <div className="w-full h-[280px] overflow-hidden rounded-t-2xl">
         <img
           src={photoUrl}
           alt={name}
@@ -50,7 +50,7 @@ export default function MentorCard({
       </div>
 
       {/* Content */}
-      <div className="px-5 pt-4 pb-0">
+      <div className="px-6 pt-5 pb-0">
         {/* Name + Flag + Verified */}
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
@@ -106,7 +106,7 @@ export default function MentorCard({
       </div>
 
       {/* Divider + Stats */}
-      <div className="px-5 mt-4">
+      <div className="px-6 mt-4">
         <div className="flex items-center justify-center gap-6 py-3 border-t border-gray-100">
           <span className="flex items-center gap-1.5 text-[13px] text-gray-500">
             <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,7 +125,7 @@ export default function MentorCard({
       </div>
 
       {/* Quote */}
-      <div className="bg-gray-50 px-5 py-4">
+      <div className="bg-gray-50 px-6 py-4">
         <p className="text-[12px] text-gray-400 italic leading-relaxed text-center">
           &ldquo;{quote}&rdquo; – <span className={blurName ? 'blur-[4px] select-none' : ''}>{name}</span>
         </p>
