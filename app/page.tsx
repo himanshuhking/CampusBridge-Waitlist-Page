@@ -233,15 +233,12 @@ export default function LandingPage() {
             </div>
           </div>
 
-          {/* Mentor cards */}
+          {/* Mentor card images */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto justify-items-center">
-            {SECTION_MENTORS.map((mentor) => (
-              <MentorCard key={mentor.name} {...mentor} />
-            ))}
+            <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
+            <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
+            <img src="/images/card-3.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
           </div>
-          <p className="text-center text-xs text-gray-400 mt-4">
-            Sample mentors — you&apos;ll be able to book real people like these when we launch
-          </p>
         </div>
       </section>
 
