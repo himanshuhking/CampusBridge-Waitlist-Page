@@ -40,7 +40,7 @@ export default function MentorCard({
   return (
     <div className={`${width} bg-white rounded-2xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.08)]`}>
       {/* Photo */}
-      <div className="w-full h-[240px] overflow-hidden">
+      <div className="w-full h-[240px] overflow-hidden rounded-t-2xl">
         <img
           src={photoUrl}
           alt={name}
@@ -76,7 +76,7 @@ export default function MentorCard({
         <p className="text-[15px] font-bold text-gray-900 mb-2.5 ml-6">{college}</p>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-3 ml-6">
+        <div className="flex flex-wrap gap-2 mb-3">
           {tags.map((tag) => (
             <span
               key={tag.label}
@@ -103,7 +103,6 @@ export default function MentorCard({
             )}
           </div>
         )}
-
       </div>
 
       {/* Divider + Stats */}
