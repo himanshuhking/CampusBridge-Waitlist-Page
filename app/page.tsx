@@ -20,6 +20,7 @@ const HERO_MENTOR = {
   sessions: 17,
   reviews: 12,
   quote: "Chose SPJIMR for its abhyudaya rural immersion and true general management focus",
+  blurName: true,
 };
 
 const SECTION_MENTORS = [

@@ -17,6 +17,7 @@ interface MentorCardProps {
   reviews: number;
   quote: string;
   width?: string;
+  blurName?: boolean;
 }
 
 export default function MentorCard({
@@ -34,6 +35,7 @@ export default function MentorCard({
   reviews,
   quote,
   width = 'w-full max-w-[340px]',
+  blurName = false,
 }: MentorCardProps) {
   return (
     <div className={`${width} bg-white rounded-2xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.08)]`}>
@@ -53,7 +55,7 @@ export default function MentorCard({
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
             <span className="text-lg leading-none">{flag}</span>
-            <h4 className="text-[17px] font-semibold text-gray-900 tracking-tight">{name}</h4>
+            <h4 className={`text-[17px] font-semibold text-gray-900 tracking-tight ${blurName ? 'blur-[4px] select-none' : ''}`}>{name}</h4>
           </div>
           {/* Green verified badge */}
           <svg className="w-6 h-6 text-green-500 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor">
@@ -138,7 +140,7 @@ export default function MentorCard({
       {/* Quote */}
       <div className="bg-gray-50 px-5 py-4">
         <p className="text-[12px] text-gray-400 italic leading-relaxed text-center">
-          &ldquo;{quote}&rdquo; – {name}
+          &ldquo;{quote}&rdquo; – <span className={blurName ? 'blur-[4px] select-none' : ''}>{name}</span>
         </p>
       </div>
     </div>
