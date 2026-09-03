@@ -7,7 +7,7 @@ import { usePageViewTracking, trackCTAClick } from '@/components/AnalyticsProvid
 
 const HERO_MENTOR = {
   name: 'Dhriti Kadam',
-  photoUrl: '/images/mentor-dhriti.png',
+  photoUrl: '/images/mentor-dhriti-photo.png',
   flag: '🇮🇳',
   degree: 'MBA General Management, 2027',
   college: 'SPJIMR',
