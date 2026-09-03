@@ -75,3 +75,32 @@ button {
   background: rgba(233, 85, 34, 0.15);
   color: var(--text-primary);
 }
+
+/* Hero fade-in-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.hero-animate-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.hero-animate-delay-2 {
+  animation-delay: 0.5s;
+}
+
+.hero-animate-delay-3 {
+  animation-delay: 0.8s;
+}

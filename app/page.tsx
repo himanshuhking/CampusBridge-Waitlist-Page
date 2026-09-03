@@ -128,13 +128,15 @@ export default function LandingPage() {
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl xl:max-w-5xl mx-auto text-center px-4 sm:px-6">
-          <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[68px] font-bold text-white leading-[1.1] mb-6 font-display">
+          <h1 className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[68px] font-bold text-white leading-[1.1] mb-6 font-display hero-animate hero-animate-delay-1">
             Stop best guessing your <span className="text-brand-500">college decisions.</span>
           </h1>
-          <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-10 max-w-xl mx-auto hero-animate hero-animate-delay-2">
             Talk to real students and alumni, free video calls,<br />get honest answers.
           </p>
-          <EmailForm variant="hero-inline" />
+          <div className="hero-animate hero-animate-delay-3">
+            <EmailForm variant="hero-inline" />
+          </div>
         </div>
       </section>
 
