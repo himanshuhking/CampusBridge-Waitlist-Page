@@ -144,7 +144,7 @@ export default function LandingPage() {
       <section className="py-16 sm:py-20 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center">
-            <div className="w-full max-w-[400px] rounded-2xl overflow-hidden shadow-[0_2px_20px_rgba(0,0,0,0.08)]">
+            <div className="w-full max-w-[400px] shadow-[0_2px_20px_rgba(0,0,0,0.08)]">
               <img
                 src="/images/mentor-dhriti-card.png"
                 alt="Mentor profile - Dhriti Kadam"
