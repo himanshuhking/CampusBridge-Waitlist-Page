@@ -140,24 +140,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Mentor card reveal on scroll */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex justify-center">
-            <div className="w-full max-w-[400px] shadow-[0_2px_20px_rgba(0,0,0,0.08)]">
-              <img
-                src="/images/mentor-dhriti-card.png"
-                alt="Mentor profile - Dhriti Kadam"
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-          <p className="text-center text-xs text-gray-400 mt-3">
-            Sample mentor profile — real conversations, real people
-          </p>
-        </div>
-      </section>
-
       {/* ========== 2. THE PROBLEM SECTION ========== */}
       <section className="py-16 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
