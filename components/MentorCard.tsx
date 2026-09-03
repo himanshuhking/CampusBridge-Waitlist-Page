@@ -9,7 +9,9 @@ interface MentorCardProps {
   degree: string;
   college: string;
   tags: { label: string; bgColor: string; textColor: string }[];
-  role: string;
+  ugDegree?: string;
+  ugCollege?: string;
+  role?: string;
   company?: string;
   sessions: number;
   reviews: number;
@@ -24,6 +26,8 @@ export default function MentorCard({
   degree,
   college,
   tags,
+  ugDegree,
+  ugCollege,
   role,
   company,
   sessions,
@@ -82,6 +86,22 @@ export default function MentorCard({
           ))}
         </div>
 
+        {/* UG Education */}
+        {ugDegree && (
+          <div className="mb-3">
+            <div className="flex items-center gap-2 mb-1">
+              <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+              </svg>
+              <span className="text-[13px] text-gray-500">{ugDegree}</span>
+            </div>
+            {ugCollege && (
+              <p className="text-[15px] font-bold text-gray-900 ml-6">{ugCollege}</p>
+            )}
+          </div>
+        )}
+
         {/* Role */}
         <div className="flex items-center gap-2 mb-0.5">
           <svg className="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +138,7 @@ export default function MentorCard({
       {/* Quote */}
       <div className="bg-gray-50 px-5 py-4">
         <p className="text-[12px] text-gray-400 italic leading-relaxed text-center">
-          &ldquo;{quote}&rdquo;
+          &ldquo;{quote}&rdquo; – {name}
         </p>
       </div>
     </div>

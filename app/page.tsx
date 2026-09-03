@@ -9,17 +9,17 @@ const HERO_MENTOR = {
   name: 'Dhriti Kadam',
   photoUrl: '/images/mentor-dhriti.png',
   flag: '🇮🇳',
-  degree: 'B.Arch Urban Planning, 2029',
-  college: 'SPA Delhi',
+  degree: 'MBA General Management, 2027',
+  college: 'SPJIMR',
   tags: [
     { label: '2nd year student', bgColor: '#f0ebe3', textColor: '#7a6e5d' },
-    { label: 'NATA Topper', bgColor: '#e8f4fd', textColor: '#4a90c4' },
+    { label: 'CAT 94 percentile', bgColor: '#e8f4fd', textColor: '#4a90c4' },
   ],
-  role: 'Summer Intern',
-  company: 'Arcadis',
+  ugDegree: 'BBA, 2025',
+  ugCollege: 'SCMS, Pune',
   sessions: 17,
   reviews: 12,
-  quote: "Chose SPA Delhi because it's the only place in India where architecture meets real urban planning practice",
+  quote: "Chose SPJIMR for its abhyudaya rural immersion and true general management focus",
 };
 
 const SECTION_MENTORS = [
