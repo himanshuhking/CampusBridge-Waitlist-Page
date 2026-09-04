@@ -191,7 +191,7 @@ export default function LandingPage() {
       </section>
 
       {/* ========== 3. HOW IT WORKS SECTION ========== */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6">
+      <section className="py-16 sm:py-24 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-2">How it works</p>
@@ -241,9 +241,9 @@ export default function LandingPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto justify-items-center">
-            <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
-            <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
-            <img src="/images/card-3.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
+            <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
+            <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
+            <img src="/images/card-3.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
           </div>
         </div>
       </section>
