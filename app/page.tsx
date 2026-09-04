@@ -234,7 +234,7 @@ export default function LandingPage() {
           </div>
 
           {/* Mentor card images */}
-          <div className="text-center mt-16 mb-10">
+          <div className="text-center mt-32 mb-10">
             <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-2">Real mentors, real profiles</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 font-display">
               Talk to someone who actually studied there
