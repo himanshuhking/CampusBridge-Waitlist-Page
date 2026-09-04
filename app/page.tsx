@@ -146,7 +146,7 @@ export default function LandingPage() {
           <div className="text-center mb-12">
             <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-2">The problem</p>
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 font-display">
-              Most sources of college advice have a blind spot — the truth
+              The questions are bigger than a search result
             </h2>
           </div>
 
