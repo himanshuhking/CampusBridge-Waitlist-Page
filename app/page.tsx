@@ -241,9 +241,9 @@ export default function LandingPage() {
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto justify-items-center">
-            <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
-            <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
-            <img src="/images/card-3.png" alt="Mentor profile card" className="w-full max-w-[340px] shadow-md" />
+            <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px]" />
+            <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px]" />
+            <img src="/images/card-3.png" alt="Mentor profile card" className="w-full max-w-[340px]" />
           </div>
         </div>
       </section>
