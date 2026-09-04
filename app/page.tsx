@@ -234,6 +234,12 @@ export default function LandingPage() {
           </div>
 
           {/* Mentor card images */}
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold text-brand-600 uppercase tracking-wider mb-2">Real mentors, real profiles</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 font-display">
+              Talk to someone who actually studied there
+            </h2>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto justify-items-center">
             <img src="/images/card-1.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
             <img src="/images/card-2.png" alt="Mentor profile card" className="w-full max-w-[340px] rounded-2xl shadow-md" />
